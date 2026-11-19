@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h2>TO DO LIST</h2>
+        </div>
+        <div class="main-bar">
+            <div class="head">
+                <h1>Things I Need to Do!</h1>
+                <h3>Kerjain tugasnya yuk...</h3>
+            </div>
+            <div class="addTask">
+                <input type="text" id="taskInput" placeholder="Mau nambahin tugas apa?">
+                <button id="addButton">Tambah</button>
+            </div>
+            
+            <div class="filter-buttons">
+                <button id="btnAll">All</button>
+                <button id="btnActive">Active</button>
+                <button id="btnCompleted">Completed</button>
+            </div>
+            <h3>Click if the task is completed!</h3>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
