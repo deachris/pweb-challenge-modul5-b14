@@ -1,6 +1,7 @@
 // src/index.ts
 import "dotenv/config";
 import express from "express";
+import cors from "cors";
 import prisma from "./config/prisma";
 import { errorHandler, notFound } from "./middlewares/error";
 import { logger } from "./middlewares/logger";
@@ -10,7 +11,9 @@ const app = express();
 
 // Middleware global (urutannya penting!)
 app.use(logger);
+
 app.use(express.json());
+app.use(cors({ origin: "http://localhost:5174" }));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (_req, res) => {
