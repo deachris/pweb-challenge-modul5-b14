@@ -72,3 +72,68 @@ body {
   border-radius: 12px;
   font-weight: 600;
 }
+
+.post-form,
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-form {
+  padding: 20px;
+  background: white;
+  border: 1px solid #62888b;
+  border-radius: 12px;
+}
+
+.post-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  border: 0;
+}
+
+.post-form input,
+.post-form textarea,
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.post-form textarea {
+  resize: vertical;
+}
+
+.post-form button,
+.delete-button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #1d4ed8;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.delete-button {
+  align-self: flex-start;
+  margin-top: 8px;
+  background: #b91c1c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-error {
+  padding: 12px;
+  border-radius: 8px;
+  color: #991b1b;
+  background: #fee2e2;
+}
